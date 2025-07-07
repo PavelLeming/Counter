@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\unityprojects\\counter\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\unityprojects\\counter\\assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0943B1BA-F211-4FD6-BDED-A9170E83BCE2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CounterView.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\UnityProjects\\Counter\\Assets\\Scripts\\CounterView.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CounterView.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\UnityProjects\\Counter\\Assets\\Scripts\\CounterView.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CounterView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:32:55.372Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Counter.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\UnityProjects\\Counter\\Assets\\Scripts\\Counter.cs",
               "RelativeToolTip": "Assets\\Scripts\\Counter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T11:01:03.693Z",
               "EditorCaption": ""
