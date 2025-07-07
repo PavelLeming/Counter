@@ -15,8 +15,8 @@ public class CounterView : MonoBehaviour
         _counter.CountChanched -= ShowCount;
     }
 
-    public void ShowCount()
+    public void ShowCount(int count)
     {
-        Debug.Log(_counter.Count);
+        Debug.Log(count);
     }
 }

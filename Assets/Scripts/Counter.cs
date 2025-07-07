@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -5,15 +6,15 @@ using UnityEngine.Events;
 public class Counter : MonoBehaviour
 {
     private float _delay = 0.5f;
-    public int Count { get; private set; }
-    private Coroutine _countup;
-    CounterView counterView = new CounterView();
+    private int _count = 0;
+    private IEnumerator _countup;
     private bool isRun = true;
-    public event UnityAction CountChanched;
+    public event Action<int> CountChanched;
 
     private void Start()
     {
-        _countup = StartCoroutine(Countup(_delay));
+        _countup = Countup(_delay);
+        StartCoroutine(_countup);
     }
 
     private void Update()
@@ -27,7 +28,7 @@ public class Counter : MonoBehaviour
             }
             else
             {
-                StartCoroutine(Countup(_delay));
+                StartCoroutine(_countup);
                 isRun = true;
             }
         }
@@ -39,8 +40,8 @@ public class Counter : MonoBehaviour
 
         while (enabled)
         {
-            CountChanched?.Invoke();
-            Count++;
+            CountChanched?.Invoke(_count);
+            _count++;
             yield return wait;
         }
     }
