@@ -1,14 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Counter : MonoBehaviour
 {
     private float _delay = 0.5f;
-    private int _count = 0;
+    public int Count { get; private set; }
     private Coroutine _countup;
     CounterView counterView = new CounterView();
     private bool isRun = true;
+    public event UnityAction CountChanched;
 
     private void Start()
     {
@@ -38,8 +39,8 @@ public class Counter : MonoBehaviour
 
         while (enabled)
         {
-            counterView.ShowCount(_count);
-            _count++;
+            CountChanched?.Invoke();
+            Count++;
             yield return wait;
         }
     }
